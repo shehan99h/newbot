@@ -1,29 +1,20 @@
 {
-  "name": "YouTube Downloader Bot",
-  "description": "A telegram bot To Download Youtube Files ",
-  "logo": "https://telegra.ph/file/6a3b1febade2313dd0dca.jpg",
+  "name": "telegram-music-downloader-bot",
+  "description": "YouTube Music Downloader Bot for Telegram. ",
+	"stack": "container",
+  "repository": "https://github.com/henriqueclaranhan/telegram-music-downloader-bot",
   "keywords": [
-    "Youtube","YoutubeDownloader"
+  "python", 
+  "chatbot", 
+  "telegrambot"
   ],
-  "repository": "https://github.com/aryanvikash/Youtube-Downloader-Bot",
-  "success_url": "https://t.me/youtubdlbot",
-  "website": "https://github.com/aryanvikash/Youtube-Downloader-Bot",
+  "website": "https://github.com/henriqueclaranhan/telegram-music-downloader-bot",
+  "success_url": "https://t.me/tlmusicdownloader_bot",
   "env": {
-        "API_ID": {"description": "Get this value from https://my.telegram.org", "required": true},
-        "API_HASH": {"description": "Get this value from https://my.telegram.org" , "required": true},
-        "TOKEN": {"description": "Get Bot Token From BotFather Bot","required": true}
-  },
-      "buildpacks": [
-        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
-        {"url": "heroku/python"}
-    ],
-  "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    },
-      "stack": "heroku-20"
-
-
+    "TOKEN": {
+      "description": "Make a bot at BotFather http://telegram.dog/BotFather and get the token of your bot",
+      "value": "",
+      "required": true
+    }
+  }
 }
