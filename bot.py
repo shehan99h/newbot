@@ -6,7 +6,7 @@ from multiprocessing import Process
 from youtubesearchpython import VideosSearch
 from dotenv import load_dotenv
 from os.path import join, dirname
-os.system("python start.py")
+os.system("python3 start.py")
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
