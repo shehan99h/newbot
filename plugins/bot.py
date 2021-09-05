@@ -68,14 +68,6 @@ class Chat:
         self.message_id = msg['message_id']
 
         self.messages = {
-        joinButton = InlineKeyboardMarkup([
-        [InlineKeyboardButton("Channel", url="https://t.me/aryan_bots")],
-        [InlineKeyboardButton(
-            "Report Bugs 😊", url="https://t.me/aryanvikash")]
-    ])
-    welcomed = f"Hey <b>{message.from_user.first_name}</b>\n/help for More info"
-    raise StopPropagation
-
             'start':'🤖 Hello, '+ self.user_name +'!\n\n'
                     '📩 Send me:\n\n'
                     '"*/music* _song name_"  or\n'
